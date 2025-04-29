@@ -1,0 +1,45 @@
+// 全体に共通するスタイル
+// @include mq(sp) {
+//   .is-pc {
+//     display: none;
+//   }
+// }
+
+// @include mq(pc) {
+//   .is-sp {
+//     display: none;
+//   }
+// }
+
+// ---
+// 非表示
+// ---
+.hidden-pc {
+  // PC時に非表示
+
+  @include mq("pc") {
+    display: none;
+  }
+}
+
+// .hidden-sm {
+//   @include mq("sm") {
+//     display: none;
+//   }
+// }
+
+.hidden-sp {
+  // スマホ時に非表示
+
+  @include mq("sp") {
+    display: none;
+  }
+}
+
+.hidden-tab {
+  // タブレット時に非表示
+
+  @include mq("tab") {
+    display: none;
+  }
+}

@@ -1,0 +1,31 @@
+// レイアウト
+$inner-width: 1440px; // インナー幅サイズ
+$sp-width: 768px; // スマホサイズ
+
+// ブレークポイント
+$breakpoints: (
+  // スマホ以下の場合(767px以下)
+  "sp": "screen and (max-width: #{$sp-width - 1px})",
+  // 376px以上768px以下
+  // "sm": "screen and (min-width: 376px) and (max-width: 768px)",
+  // 769px以上1439px以下
+  // "lg": "screen and (min-width: 769px) and (max-width: 1439px)",
+  // タブレット以下の場合
+  "tab":
+    "screen and (min-width: #{$sp-width}) and (max-width: 1024px)",
+  // タブレット以上の場合
+  "pc": "screen and (min-width: 1025px)"
+);
+
+// ---
+// メディアクエリー
+// ---
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+// @media (min-width: 768px) and (max-width: 959px){
+//   /* 画面サイズが768px以上、960px未満の設定 */
+//  }

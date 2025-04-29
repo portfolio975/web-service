@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 検索にヒットさせない -->
+    <meta name="robots" content="noindex" />
+
+    <title>Ravek</title>
+    <meta
+      name="description"
+      content="Ravek（レイベック）は複数人のプロジェクトにおけるタスク管理を
+    簡単かつ高速にし、生産性を向上させるツールです。"
+    />
+
+    <!-- ファビコン -->
+    <link rel="shortcut icon" href="./favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    />
+    <!-- drawer.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css"
+      media="screen and (max-width:767px)"
+    />
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- wow -->
+    <link rel="stylesheet" href="./css/animate.css" />
+    <!-- original -->
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <section class="header">
+      <div class="header__inner">
+        <div class="header__wrap">
+          <a href="#" class="header__logo">
+            <img src="./img/Ravek.png" alt="Ravek" />
+          </a>
+          <ul class="header__nav">
+            <li class="header__nav-list">
+              <a href="#feature" class="header__nav-link header__nav-link-underline"
+                >特長</a
+              >
+            </li>
+            <li class="header__nav-list">
+              <a href="#users" class="header__nav-link header__nav-link-underline"
+                >導入実績</a
+              >
+            </li>
+            <li class="header__nav-list">
+              <a href="#flow" class="header__nav-link header__nav-link-underline"
+                >導入までの流れ</a
+              >
+            </li>
+            <li class="header__nav-list">
+              <a href="#price" class="header__nav-link header__nav-link-underline"
+                >料金プラン</a
+              >
+            </li>
+            <li class="header__nav-list">
+              <a href="#question" class="header__nav-link header__nav-link-underline"
+                >よくある質問</a
+              >
+            </li>
+            <li class="header__nav-list">
+              <a href="#" class="header__nav-link header__nav-cta-btn"
+                >無料で使ってみる</a
+              >
+            </li>
+          </ul>
+          <div class="header__menu-icons hidden-pc hidden-tab">
+            <div class="header__menu-contents" id="js-menu-button">
+              <div class="header__menu-text">MENU</div>
+              <div class="header__bars-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                >
+                  <path
+                    d="M0 1.5C0 1.10218 0.138281 0.720645 0.384423 0.43934C0.630564 0.158036 0.964403 0 1.3125 0H19.6875C20.0356 0 20.3694 0.158036 20.6156 0.43934C20.8617 0.720645 21 1.10218 21 1.5C21 1.89782 20.8617 2.27936 20.6156 2.56066C20.3694 2.84196 20.0356 3 19.6875 3H1.3125C0.964403 3 0.630564 2.84196 0.384423 2.56066C0.138281 2.27936 0 1.89782 0 1.5Z"
+                    fill="#64629D"
+                  />
+                  <path
+                    d="M0 19.5C0 19.1022 0.138281 18.7206 0.384423 18.4393C0.630564 18.158 0.964403 18 1.3125 18H19.6875C20.0356 18 20.3694 18.158 20.6156 18.4393C20.8617 18.7206 21 19.1022 21 19.5C21 19.8978 20.8617 20.2794 20.6156 20.5607C20.3694 20.842 20.0356 21 19.6875 21H1.3125C0.964403 21 0.630564 20.842 0.384423 20.5607C0.138281 20.2794 0 19.8978 0 19.5Z"
+                    fill="#64629D"
+                  />
+                  <path
+                    d="M9.1875 9C8.8394 9 8.50556 9.15804 8.25942 9.43934C8.01328 9.72065 7.875 10.1022 7.875 10.5C7.875 10.8978 8.01328 11.2794 8.25942 11.5607C8.50556 11.842 8.8394 12 9.1875 12H19.6875C20.0356 12 20.3694 11.842 20.6156 11.5607C20.8617 11.2794 21 10.8978 21 10.5C21 10.1022 20.8617 9.72065 20.6156 9.43934C20.3694 9.15804 20.0356 9 19.6875 9H9.1875Z"
+                    fill="#64629D"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="header__close-icon is-hide" id="js-close-button">
+              <svg
+                class="header__svg-close-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+              >
+                <path
+                  d="M11.113 8.99872L17.5567 2.56902C17.8389 2.2868 17.9974 1.90402 17.9974 1.5049C17.9974 1.10577 17.8389 0.722997 17.5567 0.440774C17.2745 0.158551 16.8918 0 16.4928 0C16.0937 0 15.711 0.158551 15.4288 0.440774L9 6.88546L2.57121 0.440774C2.28903 0.158551 1.90631 -2.9737e-09 1.50724 0C1.10817 2.9737e-09 0.725452 0.158551 0.443269 0.440774C0.161086 0.722997 0.00255743 1.10577 0.00255743 1.5049C0.00255743 1.90402 0.161086 2.2868 0.443269 2.56902L6.88704 8.99872L0.443269 15.4284C0.302812 15.5678 0.191329 15.7335 0.115249 15.9162C0.0391699 16.0988 0 16.2947 0 16.4925C0 16.6904 0.0391699 16.8863 0.115249 17.0689C0.191329 17.2516 0.302812 17.4173 0.443269 17.5567C0.582579 17.6971 0.74832 17.8086 0.930933 17.8847C1.11355 17.9608 1.30941 18 1.50724 18C1.70507 18 1.90094 17.9608 2.08355 17.8847C2.26616 17.8086 2.4319 17.6971 2.57121 17.5567L9 11.112L15.4288 17.5567C15.5681 17.6971 15.7338 17.8086 15.9165 17.8847C16.0991 17.9608 16.2949 18 16.4928 18C16.6906 18 16.8865 17.9608 17.0691 17.8847C17.2517 17.8086 17.4174 17.6971 17.5567 17.5567C17.6972 17.4173 17.8087 17.2516 17.8848 17.0689C17.9608 16.8863 18 16.6904 18 16.4925C18 16.2947 17.9608 16.0988 17.8848 15.9162C17.8087 15.7335 17.6972 15.5678 17.5567 15.4284L11.113 8.99872Z"
+                  fill="#64629D"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sp-header -->
+    <section class="sp-header hidden-pc hidden-tab">
+      <div class="sp-header__inner">
+        <ul class="sp-header__nav">
+          <li class="sp-header__nav-list">
+            <a href="#feature" class="sp-header__nav-link">特長</a>
+          </li>
+          <li class="sp-header__nav-list">
+            <a href="#users" class="sp-header__nav-link">導入実績</a>
+          </li>
+          <li class="sp-header__nav-list">
+            <a href="#flow" class="sp-header__nav-link">導入までの流れ</a>
+          </li>
+          <li class="sp-header__nav-list">
+            <a href="#price" class="sp-header__nav-link">料金プラン</a>
+          </li>
+          <li class="sp-header__nav-list">
+            <a href="#question" class="sp-header__nav-link">よくある質問</a>
+          </li>
+        </ul>
+        <div class="sp-header__buttons">
+          <a href="#" class="cta-button sp-header__cta-button"
+            >無料でRavekを使ってみる</a
+          >
+          <a href="#" class="download-button sp-header__download-button"
+            >資料をダウンロードする</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- fv -->
+    <section class="fv">
+      <div class="fv__inner">
+        <div class="fv__wrap">
+          <div class="fv__catchphrase">
+            <h1 class="fv__heading">
+              タスク管理は<br />
+              時間をかけず、高速に。
+            </h1>
+            <p class="fv__description">
+              Ravek（レイベック）は複数人のプロジェクトにおけるタスク管理を<br
+                class="hidden-sp"
+              />簡単かつ高速にし、生産性を向上させるツールです。
+            </p>
+          </div>
+          <div class="fv__buttons">
+            <a href="#" class="cta-button fv__cta-button">まずは無料で使ってみる</a>
+            <a href="#" class="download-button fv__download-button">資料をダウンロードする</a>
+          </div>
+          <div class="fv__img">
+            <img
+              src="./img/At work-amico 1.png"
+              alt="タスク管理している人の画像"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section class="about">
+      <div class="about__inner">
+        <div class="about__heading-block">
+          <h2 class="heading-english">What is Ravek?</h2>
+          <h2 class="heading-japanese">タスク管理の時間を<br class="hidden-pc hidden-tab">削減するツール</h2>
+        </div>
+        <div class="about__ravek-block">
+          <p class="about__ravek">
+            Ravek（レイベック）は、<br class="hidden-pc hidden-tab"><span class="about__bold">複数人が関わるプロジェクトでのタスク管理を簡単かつ高速にするツール</span>です。
+          </p>
+          <p class="about__description">
+            タスクの登録や進捗管理の手間を減らし、わかりやすく見える化することで<br>タスク管理にかかる時間を極限まで減らし、本質的な業務に時間を使いましょう。
+          </p>
+        </div>
+        <div class="about__button">
+          <a href="#" class="cta-button2 about__cta-button">無料でRavekを使ってみる</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- feature -->
+    <section class="feature" id="feature">
+      <div class="feature__inner">
+        <div class="feature__heading-block">
+          <h2 class="heading-english">Feature</h2>
+          <h2 class="heading-japanese">Ravekの<span class="feature__heading-bold">3</span>つの特長</h2>
+        </div>
+        <div class="feature__contents">
+          <div class="feature__contents-wrapper">
+            <div class="feature__content feature__content1">
+              <div class="feature__writing-block">
+                <div class="feature__number">01</div>
+                <div class="feature__texts">
+                  <p class="feature__heading">
+                    タスクの種類・進捗を<br>ダッシュボードで確認可能
+                  </p>
+                  <p class="feature__text">
+                    Ravekはメンバーが入力したタスクを整理し、ダッシュボードにガントチャートとして表示。ダッシュボードを確認するだけで、誰のどのタスクがどの程度進んでいるのかを一目で把握できます。
+                  </p>
+                </div>
+              </div>
+              <div class="feature__img-block feature__img-block1">
+                <img src="./img/Dashboard-amico (1) 1.png" alt="タスク確認画像">
+              </div>
+            </div>
+            <div class="feature__content feature__content2">
+              <div class="feature__writing-block">
+                <div class="feature__number">02</div>
+                <div class="feature__texts">
+                  <p class="feature__heading feature__heading2">
+                    タスクの入力がシンプルかつ簡単。<br>入力の手間が最小限に
+                  </p>
+                  <p class="feature__text">
+                    タスク管理ツールで面倒になりがちなタスクの入力作業。<br class="hidden-sp">
+                    RavekはPC・スマートフォンのどちらでもシンプルかつ簡単に入力でき、手間が最小限に抑えられます。本質的な業務に時間を割きましょう。
+                  </p>
+                </div>
+              </div>
+              <div class="feature__img-block feature__img-block2">
+                <img src="./img/Design tools-amico (1) 1.png" alt="タスク入力画像">
+              </div>
+            </div>
+            <div class="feature__content feature__content3">
+              <div class="feature__writing-block">
+                <div class="feature__number">03</div>
+                <div class="feature__texts">
+                  <p class="feature__heading">
+                    SlackとのAPI連携<br>ツール切り替えの手間を削減
+                  </p>
+                  <p class="feature__text">
+                    RavekはSlackと連携することで、Slack上でRavekをタスクを追加したり、確認したりできます。都度の切り替えの手間がなくなり、シームレスに扱えるのが特長です。Slackを導入しているなら違和感なく使用できます。
+                  </p>
+                </div>
+              </div>
+              <div class="feature__img-block feature__img-block3">
+                <img src="./img/Online world-amico 1.png" alt="通信接続画像">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cta-area -->
+    <section class="cta-area">
+      <div class="cta-area__inner">
+        <div class="cta-area__title">
+          14日間の無料トライアル可能。<br>Ravekで快適なタスク管理を体験しよう
+        </div>
+        <div class="cta-area__button">
+          <a href="#" class="cta-button2 about__cta-button">無料でRavekを使ってみる</a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- users -->
+    <section class="users" id="users">
+      <div class="users__inner">
+        <div class="users__heading-block">
+          <h2 class="heading-english">Users</h2>
+          <h2 class="heading-japanese">導入実績</h2>
+        </div>
+        <div class="users__images">
+          <div class="users__image">
+            <img src="./img/SnapCrab.png" alt="icedog-works">
+          </div>
+          <div class="users__image">
+            <img src="./img/SnapCrab.png" alt="icedog-works">
+          </div>
+          <div class="users__image">
+            <img src="./img/SnapCrab.png" alt="icedog-works">
+          </div>
+          <div class="users__image">
+            <img src="./img/SnapCrab.png" alt="icedog-works">
+          </div>
+          <div class="users__image">
+            <img src="./img/SnapCrab.png" alt="icedog-works">
+          </div>
+          <div class="users__image">
+            <img src="./img/SnapCrab.png" alt="icedog-works">
+          </div>
+          <div class="users__image">
+            <img src="./img/SnapCrab.png" alt="icedog-works">
+          </div>
+          <div class="users__image">
+            <img src="./img/SnapCrab.png" alt="icedog-works">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- flow -->
+    <section class="flow" id="flow">
+      <div class="flow__inner">
+        <div class="flow__heading-block">
+          <h2 class="heading-english">Flow</h2>
+          <h2 class="heading-japanese">導入までの流れ</h2>
+        </div>
+        <div class="flow__contents">
+          <div class="flow__content flow__content1">
+            <div class="flow__image-block flow__image-block1">
+              <div class="flow__img">
+                <img src="./img/01 img.png" alt="無料トライアルを開始">
+              </div>
+            </div>
+            <div class="flow__text-block">
+              <h3 class="flow__text-title">無料トライアルを開始</h3>
+              <p class="flow__text">
+                まずはRavekの使用感をお試しください。最初の14日間は無料でご使用いただけます。
+              </p>
+            </div>
+          </div>
+          <div class="flow__content flow__content2">
+            <div class="flow__image-block flow__image-block2">
+              <div class="flow__img">
+                <img src="./img/02 img.png" alt="本格導入をサポート">
+              </div>
+            </div>
+            <div class="flow__text-block">
+              <h3 class="flow__text-title">本格導入をサポート</h3>
+              <p class="flow__text">
+                Ravekを気に入っていただけましたら、適したプランで導入ください。導入にお困りの際は、メール、またはチャットにてサポートいたします。
+              </p>
+            </div>
+          </div>
+          <div class="flow__content flow__content3">
+            <div class="flow__image-block flow__image-block3">
+              <div class="flow__img">
+                <img src="./img/03 img.png" alt="全プロジェクトへ展開">
+              </div>
+            </div>
+            <div class="flow__text-block">
+              <h3 class="flow__text-title">全プロジェクトへ展開</h3>
+              <p class="flow__text flow__text3">
+                Ravekは段階的な導入がおすすめです。主要プロジェクトでの運用に慣れたら、全プロジェクトへ展開を行いましょう。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cta-area -->
+    <section class="cta-area">
+      <div class="cta-area__inner">
+        <div class="cta-area__title">
+          14日間の無料トライアル可能。<br>Ravekで快適なタスク管理を体験しよう
+        </div>
+        <div class="cta-area__button">
+          <a href="#" class="cta-button2 about__cta-button">無料でRavekを使ってみる</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- price -->
+    <div class="price__heading-block" id="price">
+      <h2 class="heading-english">Price</h2>
+      <h2 class="heading-japanese">料金プラン</h2>
+    </div>
+    <section class="price">
+      <div class="price__inner">
+        <!-- <div class="price__heading-block">
+          <h2 class="heading-english">Price</h2>
+          <h2 class="heading-japanese">料金プラン</h2>
+        </div> -->
+        <div class="price__contents">
+          <div class="price__content">
+            <div class="price__plan-block">
+              <div class="price__box">
+                <h3 class="price__name">ライト</h3>
+                <p class="price__monthly-fee">
+                  月額<span class="price__fee">1,980</span><span class="price__font">円</span>
+                </p>
+                <div class="price__cta-button-wrapper">
+                  <a href="#"3 class="price__cta-button">無料で使ってみる</a>
+                </div>
+              </div>
+              <div class="price__box price__box-basic">
+                <h3 class="price__name price__name-basic">ベーシック</h3>
+                <p class="price__monthly-fee price__monthly-fee-basic">
+                  月額<span class="price__fee price__fee-basic">2,980</span><span class="price__font price__font-basic">円</span>
+                </p>
+                <div class="price__cta-button-wrapper">
+                  <a href="#"3 class="price__cta-button price__cta-button-basic">無料で使ってみる</a>
+                </div>
+              </div>
+              <div class="price__box">
+                <h3 class="price__name">プレミアム</h3>
+                <p class="price__monthly-fee">
+                  月額<span class="price__fee">4,980</span><span class="price__font">円</span>
+                </p>
+                <div class="price__cta-button-wrapper">
+                  <a href="#"3 class="price__cta-button">無料で使ってみる</a>
+                </div>
+              </div>
+            </div>
+            <div class="price__table-block">
+              <table class="price__table">
+                <tr class="price__tr">
+                  <th class="price__item">プロジェクト数</th>
+                  <td class="price__td">5</td>
+                  <td class="price__td-bold">15</td>
+                  <td class="price__td">15</td>
+                </tr>
+                <tr class="price__tr">
+                  <th class="price__item">メンバー数</th>
+                  <td class="price__td">10</td>
+                  <td class="price__td-bold">30</td>
+                  <td class="price__td">30</td>
+                </tr>
+                <tr class="price__tr">
+                  <th class="price__item">ストレージ(容量)</th>
+                  <td class="price__td">25GB</td>
+                  <td class="price__td-bold">50GB</td>
+                  <td class="price__td">100GB</td>
+                </tr>
+                <tr class="price__tr">
+                  <th class="price__item">2段階認証</th>
+                  <td class="price__td"></td>
+                  <td class="price__td-bold">〇</td>
+                  <td class="price__td">〇</td>
+                </tr>
+                <tr class="price__tr">
+                  <th class="price__item">IP制限</th>
+                  <td class="price__td"></td>
+                  <td class="price__td-bold"></td>
+                  <td class="price__td">〇</td>
+                </tr>
+                <tr class="price__tr">
+                  <th class="price__item">メールサポート</th>
+                  <td class="price__td">〇</td>
+                  <td class="price__td-bold">〇</td>
+                  <td class="price__td">〇</td>
+                </tr>
+                <tr class="price__tr">
+                  <th class="price__item">チャットサポート</th>
+                  <td class="price__td">〇</td>
+                  <td class="price__td-bold">〇</td>
+                  <td class="price__td">〇</td>
+                </tr>
+              </table>
+              <div class="price__cta-block">
+                <div class="price__cta-button-box">
+                  <a href="#"3 class="price__cta-button">無料で使ってみる</a>
+                </div>
+                <div class="price__cta-button-box">
+                  <a href="#"3 class="price__cta-button price__cta-button-basic">無料で使ってみる</a>
+                </div>
+                <div class="price__cta-button-box">
+                  <a href="#"3 class="price__cta-button">無料で使ってみる</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- question -->
+    <section class="question" id="question">
+      <div class="question__inner">
+        <div class="question__heading-block">
+          <h2 class="heading-english">Question</h2>
+          <h2 class="heading-japanese">よくある質問</h2>
+        </div>
+        <div class="question__contents">
+          <div class="question__content">
+            <p class="question__q">
+              Ravekはユーザー1人あたりの課金制なのですか？
+            </p>
+            <p class="question__a">
+              いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。<br>もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
+            </p>
+          </div>
+          <div class="question__content">
+            <p class="question__q">
+              Ravekはユーザー1人あたりの課金制なのですか？
+            </p>
+            <p class="question__a">
+              いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。<br>もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
+            </p>
+          </div>
+          <div class="question__content">
+            <p class="question__q">
+              Ravekはユーザー1人あたりの課金制なのですか？
+            </p>
+            <p class="question__a">
+              いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。<br>もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
+            </p>
+          </div>
+          <div class="question__content">
+            <p class="question__q">
+              Ravekはユーザー1人あたりの課金制なのですか？
+            </p>
+            <p class="question__a">
+              いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。<br>もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cta-area -->
+    <section class="cta-area">
+      <div class="cta-area__inner">
+        <div class="cta-area__title">
+          14日間の無料トライアル可能。<br>Ravekで快適なタスク管理を体験しよう
+        </div>
+        <div class="cta-area__button">
+          <a href="#" class="cta-button2 about__cta-button">無料でRavekを使ってみる</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__contents">
+          <div class="footer__nav-block">
+            <a href="#" class="footer__logo">Ravek</a>
+            <ul class="footer__nav-lists">
+              <li class="footer__nav-list">
+                <a href="#" class="footer__nav-link">会社概要</a>
+              </li>
+              <li class="footer__nav-list">
+                <a href="#" class="footer__nav-link">プライバシーポリシー</a>
+              </li>
+              <li class="footer__nav-list">
+                <a href="#" class="footer__nav-link">利用規約</a>
+              </li>
+              <li class="footer__nav-list">
+                <a href="#" class="footer__nav-link">お問い合わせ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__copyright-block">
+            <small class="footer__copyright">
+              © Ravek Inc. 2021
+            </small>
+            <small class="footer__copyright">
+              Illustration by FreepikStoryset
+            </small>
+          </div>
+          <div class="footer__sns-block">
+            <h4 class="footer__sns-title">Share on SNS</h4>
+            <div class="footer__sns-icons">
+              <a href="#" class="footer__sns-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 0C5.37321 0 0 5.37321 0 12C0 18.6268 5.37321 24 12 24C18.6268 24 24 18.6268 24 12C24 5.37321 18.6268 0 12 0ZM17.767 9.04554C17.775 9.17143 17.775 9.30268 17.775 9.43125C17.775 13.3634 14.7804 17.8929 9.30804 17.8929C7.62054 17.8929 6.05625 17.4027 4.73839 16.5589C4.97946 16.5857 5.20982 16.5964 5.45625 16.5964C6.84911 16.5964 8.12946 16.125 9.15 15.3268C7.84286 15.3 6.74464 14.4429 6.36964 13.2643C6.82768 13.3313 7.24018 13.3313 7.71161 13.2107C7.03855 13.074 6.43359 12.7084 5.99951 12.1762C5.56542 11.644 5.32898 10.9779 5.33036 10.2911V10.2536C5.72411 10.4759 6.1875 10.6125 6.67232 10.6313C6.26476 10.3596 5.93051 9.99164 5.69923 9.5599C5.46794 9.12817 5.34676 8.64603 5.34643 8.15625C5.34643 7.60179 5.49107 7.09554 5.75089 6.65625C6.49795 7.5759 7.43017 8.32806 8.48696 8.86384C9.54375 9.39961 10.7014 9.70702 11.8848 9.76607C11.4643 7.74375 12.975 6.10714 14.7911 6.10714C15.6482 6.10714 16.4196 6.46607 16.9634 7.04464C17.6357 6.91875 18.2786 6.66696 18.8518 6.32946C18.6295 7.01786 18.1634 7.59911 17.5446 7.96607C18.1446 7.90179 18.7232 7.73571 19.2589 7.50268C18.8545 8.09732 18.3482 8.625 17.767 9.04554Z" fill="white"/>
+                </svg>
+              </a>
+              <a href="#" class="footer__sns-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.05273 0.072C8.33236 0.0130909 8.74036 0 12 0C15.2596 0 15.6676 0.0141818 16.9462 0.072C18.2247 0.129818 19.0975 0.333818 19.8611 0.629455C20.6607 0.931636 21.3862 1.404 21.9862 2.01491C22.5971 2.61382 23.0684 3.33818 23.3695 4.13891C23.6662 4.90255 23.8691 5.77527 23.928 7.05164C23.9869 8.33346 24 8.74146 24 12C24 15.2596 23.9858 15.6676 23.928 16.9473C23.8702 18.2236 23.6662 19.0964 23.3695 19.86C23.0684 20.6608 22.5963 21.3864 21.9862 21.9862C21.3862 22.5971 20.6607 23.0684 19.8611 23.3695C19.0975 23.6662 18.2247 23.8691 16.9484 23.928C15.6676 23.9869 15.2596 24 12 24C8.74036 24 8.33236 23.9858 7.05273 23.928C5.77636 23.8702 4.90364 23.6662 4.14 23.3695C3.33919 23.0683 2.61362 22.5963 2.01382 21.9862C1.40332 21.3869 0.930889 20.6617 0.629455 19.8611C0.333818 19.0975 0.130909 18.2247 0.072 16.9484C0.0130909 15.6665 0 15.2585 0 12C0 8.74036 0.0141818 8.33236 0.072 7.05382C0.129818 5.77527 0.333818 4.90255 0.629455 4.13891C0.931334 3.33827 1.40413 2.61307 2.01491 2.01382C2.61386 1.40346 3.3387 0.931029 4.13891 0.629455C4.90255 0.333818 5.77527 0.130909 7.05164 0.072H7.05273ZM16.8491 2.232C15.5836 2.17418 15.204 2.16218 12 2.16218C8.796 2.16218 8.41636 2.17418 7.15091 2.232C5.98036 2.28545 5.34545 2.48073 4.92218 2.64545C4.36255 2.86364 3.96218 3.12218 3.54218 3.54218C3.14405 3.92951 2.83765 4.40104 2.64545 4.92218C2.48073 5.34545 2.28545 5.98036 2.232 7.15091C2.17418 8.41636 2.16218 8.796 2.16218 12C2.16218 15.204 2.17418 15.5836 2.232 16.8491C2.28545 18.0196 2.48073 18.6545 2.64545 19.0778C2.83745 19.5982 3.144 20.0705 3.54218 20.4578C3.92945 20.856 4.40182 21.1625 4.92218 21.3545C5.34545 21.5193 5.98036 21.7145 7.15091 21.768C8.41636 21.8258 8.79491 21.8378 12 21.8378C15.2051 21.8378 15.5836 21.8258 16.8491 21.768C18.0196 21.7145 18.6545 21.5193 19.0778 21.3545C19.6375 21.1364 20.0378 20.8778 20.4578 20.4578C20.856 20.0705 21.1625 19.5982 21.3545 19.0778C21.5193 18.6545 21.7145 18.0196 21.768 16.8491C21.8258 15.5836 21.8378 15.204 21.8378 12C21.8378 8.796 21.8258 8.41636 21.768 7.15091C21.7145 5.98036 21.5193 5.34545 21.3545 4.92218C21.1364 4.36255 20.8778 3.96218 20.4578 3.54218C20.0705 3.14408 19.5989 2.83768 19.0778 2.64545C18.6545 2.48073 18.0196 2.28545 16.8491 2.232ZM10.4673 15.6993C11.3233 16.0556 12.2764 16.1037 13.1639 15.8353C14.0514 15.567 14.8182 14.9988 15.3334 14.2279C15.8485 13.457 16.0801 12.5311 15.9884 11.6085C15.8968 10.6858 15.4876 9.82361 14.8309 9.16909C14.4123 8.7507 13.906 8.43034 13.3487 8.23107C12.7914 8.0318 12.1968 7.95858 11.6078 8.01667C11.0188 8.07477 10.45 8.26274 9.94233 8.56705C9.43468 8.87136 9.00081 9.28445 8.67197 9.77657C8.34312 10.2687 8.12748 10.8276 8.04056 11.413C7.95365 11.9985 7.99762 12.596 8.16932 13.1624C8.34101 13.7288 8.63616 14.2501 9.03351 14.6888C9.43087 15.1275 9.92054 15.4726 10.4673 15.6993ZM7.63855 7.63855C8.2113 7.06579 8.89126 6.61146 9.6396 6.30149C10.3879 5.99151 11.19 5.83197 12 5.83197C12.81 5.83197 13.6121 5.99151 14.3604 6.30149C15.1087 6.61146 15.7887 7.06579 16.3615 7.63855C16.9342 8.2113 17.3885 8.89126 17.6985 9.6396C18.0085 10.3879 18.168 11.19 18.168 12C18.168 12.81 18.0085 13.6121 17.6985 14.3604C17.3885 15.1087 16.9342 15.7887 16.3615 16.3615C15.2047 17.5182 13.6359 18.168 12 18.168C10.3641 18.168 8.79528 17.5182 7.63855 16.3615C6.48182 15.2047 5.83197 13.6359 5.83197 12C5.83197 10.3641 6.48182 8.79528 7.63855 7.63855ZM19.536 6.75055C19.6779 6.61666 19.7916 6.45565 19.8701 6.27706C19.9487 6.09847 19.9907 5.90593 19.9935 5.71083C19.9964 5.51574 19.9601 5.32205 19.8867 5.14125C19.8134 4.96044 19.7045 4.79619 19.5665 4.65822C19.4285 4.52026 19.2643 4.41137 19.0835 4.33802C18.9027 4.26467 18.709 4.22834 18.5139 4.23118C18.3188 4.23403 18.1263 4.27599 17.9477 4.35458C17.7691 4.43317 17.6081 4.54679 17.4742 4.68873C17.2138 4.96476 17.0712 5.33141 17.0768 5.71083C17.0823 6.09026 17.2355 6.4526 17.5038 6.72092C17.7721 6.98924 18.1345 7.14243 18.5139 7.14796C18.8933 7.15349 19.26 7.01093 19.536 6.75055Z" fill="white"/>
+                </svg>
+              </a>
+              <a href="#" class="footer__sns-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
