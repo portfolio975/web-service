@@ -423,7 +423,7 @@ body.no-scroll {
     grid-template-rows: 1fr;
   }
 }
-@media (min-width: 769px) and (max-width: 1231px) {
+@media (min-width: 768px) and (max-width: 1231px) {
   .fv__wrap {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -483,7 +483,7 @@ body.no-scroll {
     margin-right: auto;
   }
 }
-@media (min-width: 769px) and (max-width: 1231px) {
+@media (min-width: 768px) and (max-width: 1231px) {
   .fv__buttons {
     display: block;
     text-align: center;
@@ -504,7 +504,7 @@ body.no-scroll {
     width: 300px;
   }
 }
-@media (min-width: 769px) and (max-width: 1231px) {
+@media (min-width: 768px) and (max-width: 1231px) {
   .fv__cta-button {
     margin-right: 0;
     height: 58px;
@@ -522,7 +522,7 @@ body.no-scroll {
     width: 300px;
   }
 }
-@media (min-width: 769px) and (max-width: 1231px) {
+@media (min-width: 768px) and (max-width: 1231px) {
   .fv__download-button {
     margin-top: 33px;
     height: 58px;
@@ -547,7 +547,7 @@ body.no-scroll {
     margin-right: auto;
   }
 }
-@media (min-width: 769px) and (max-width: 1231px) {
+@media (min-width: 768px) and (max-width: 1231px) {
   .fv__img {
     margin-top: -32px;
     grid-row: 2;
