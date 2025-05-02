@@ -392,7 +392,7 @@ body.no-scroll {
     grid-template-rows: 1fr;
   }
 
-  @media (min-width: 769px) and (max-width: 1231px){
+  @media (min-width: 768px) and (max-width: 1231px){
     padding-top: 60px;
     padding-bottom: 60px;
     grid-template-columns: 1fr;
@@ -447,7 +447,7 @@ body.no-scroll {
     margin-right: auto;
   }
 
-  @media (min-width: 769px) and (max-width: 1231px){
+  @media (min-width: 768px) and (max-width: 1231px){
     display: block;
     text-align: center;
     margin-top: -37px;
@@ -466,7 +466,7 @@ body.no-scroll {
     width: 300px;
   }
 
-  @media (min-width: 769px) and (max-width: 1231px){
+  @media (min-width: 768px) and (max-width: 1231px){
     margin-right: 0;
     height: 58px;
     width: 300px;
@@ -482,7 +482,7 @@ body.no-scroll {
     width: 300px;
   }
 
-  @media (min-width: 769px) and (max-width: 1231px){
+  @media (min-width: 768px) and (max-width: 1231px){
     margin-top: 33px;
     height: 58px;
     width: 300px;
@@ -505,7 +505,7 @@ body.no-scroll {
     margin-right: auto;
   }
 
-  @media (min-width: 769px) and (max-width: 1231px){
+  @media (min-width: 768px) and (max-width: 1231px){
     margin-top: -32px;
     grid-row: 2;
     grid-column: auto;
